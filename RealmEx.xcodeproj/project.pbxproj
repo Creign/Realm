@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8930BB1941FC66CCFFAD733C /* Pods_RealmEx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757244E5AEDE5189DBE23350 /* Pods_RealmEx.framework */; };
 		C27ED313219AA5EF00158B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ED312219AA5EF00158B74 /* AppDelegate.swift */; };
-		C27ED315219AA5EF00158B74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ED314219AA5EF00158B74 /* ViewController.swift */; };
+		C27ED315219AA5EF00158B74 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ED314219AA5EF00158B74 /* CategoryViewController.swift */; };
 		C27ED318219AA5EF00158B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27ED316219AA5EF00158B74 /* Main.storyboard */; };
 		C27ED31A219AA5F000158B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27ED319219AA5F000158B74 /* Assets.xcassets */; };
 		C27ED31D219AA5F000158B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27ED31B219AA5F000158B74 /* LaunchScreen.storyboard */; };
+		C27ED326219AAF3F00158B74 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ED325219AAF3F00158B74 /* Item.swift */; };
+		C27ED328219AAF5500158B74 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ED327219AAF5500158B74 /* Category.swift */; };
+		C27ED32E219AB85C00158B74 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27ED32D219AB85C00158B74 /* ItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		757244E5AEDE5189DBE23350 /* Pods_RealmEx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmEx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2E4C2E769F2163EC560B58 /* Pods-RealmEx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmEx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmEx/Pods-RealmEx.debug.xcconfig"; sourceTree = "<group>"; };
 		C27ED30F219AA5EF00158B74 /* RealmEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27ED312219AA5EF00158B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C27ED314219AA5EF00158B74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C27ED314219AA5EF00158B74 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		C27ED317219AA5EF00158B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C27ED319219AA5F000158B74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C27ED31C219AA5F000158B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C27ED31E219AA5F000158B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C27ED325219AAF3F00158B74 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C27ED327219AAF5500158B74 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C27ED32D219AB85C00158B74 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		CFAC0C26E686B1014BA74C7B /* Pods-RealmEx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmEx.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmEx/Pods-RealmEx.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8930BB1941FC66CCFFAD733C /* Pods_RealmEx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B49E0F1B632323623B483FB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				757244E5AEDE5189DBE23350 /* Pods_RealmEx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C27ED306219AA5EF00158B74 = {
 			isa = PBXGroup;
 			children = (
 				C27ED311219AA5EF00158B74 /* RealmEx */,
+				C27ED32B219AAFED00158B74 /* Support Files */,
 				C27ED310219AA5EF00158B74 /* Products */,
+				C2AFE19918960C7F2AC96A31 /* Pods */,
+				B49E0F1B632323623B483FB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +76,65 @@
 		C27ED311219AA5EF00158B74 /* RealmEx */ = {
 			isa = PBXGroup;
 			children = (
-				C27ED312219AA5EF00158B74 /* AppDelegate.swift */,
-				C27ED314219AA5EF00158B74 /* ViewController.swift */,
-				C27ED316219AA5EF00158B74 /* Main.storyboard */,
-				C27ED319219AA5F000158B74 /* Assets.xcassets */,
-				C27ED31B219AA5F000158B74 /* LaunchScreen.storyboard */,
 				C27ED31E219AA5F000158B74 /* Info.plist */,
+				C27ED32C219AB00400158B74 /* Application */,
+				C27ED32A219AAFBE00158B74 /* Controller */,
+				C27ED329219AAFAA00158B74 /* View */,
+				C27ED324219AAF1C00158B74 /* Data Model */,
 			);
 			path = RealmEx;
+			sourceTree = "<group>";
+		};
+		C27ED324219AAF1C00158B74 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				C27ED325219AAF3F00158B74 /* Item.swift */,
+				C27ED327219AAF5500158B74 /* Category.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		C27ED329219AAFAA00158B74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C27ED316219AA5EF00158B74 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C27ED32A219AAFBE00158B74 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C27ED314219AA5EF00158B74 /* CategoryViewController.swift */,
+				C27ED32D219AB85C00158B74 /* ItemViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C27ED32B219AAFED00158B74 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C27ED319219AA5F000158B74 /* Assets.xcassets */,
+				C27ED31B219AA5F000158B74 /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		C27ED32C219AB00400158B74 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C27ED312219AA5EF00158B74 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C2AFE19918960C7F2AC96A31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA2E4C2E769F2163EC560B58 /* Pods-RealmEx.debug.xcconfig */,
+				CFAC0C26E686B1014BA74C7B /* Pods-RealmEx.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C27ED321219AA5F000158B74 /* Build configuration list for PBXNativeTarget "RealmEx" */;
 			buildPhases = (
+				BCE51AF5CD3F0A55378EFF43 /* [CP] Check Pods Manifest.lock */,
 				C27ED30B219AA5EF00158B74 /* Sources */,
 				C27ED30C219AA5EF00158B74 /* Frameworks */,
 				C27ED30D219AA5EF00158B74 /* Resources */,
+				D3EB3BF9B753B69F739A9EFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +205,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BCE51AF5CD3F0A55378EFF43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmEx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3EB3BF9B753B69F739A9EFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RealmEx/Pods-RealmEx-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmEx/Pods-RealmEx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C27ED30B219AA5EF00158B74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C27ED315219AA5EF00158B74 /* ViewController.swift in Sources */,
+				C27ED315219AA5EF00158B74 /* CategoryViewController.swift in Sources */,
+				C27ED326219AAF3F00158B74 /* Item.swift in Sources */,
+				C27ED32E219AB85C00158B74 /* ItemViewController.swift in Sources */,
 				C27ED313219AA5EF00158B74 /* AppDelegate.swift in Sources */,
+				C27ED328219AAF5500158B74 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +407,7 @@
 		};
 		C27ED322219AA5F000158B74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA2E4C2E769F2163EC560B58 /* Pods-RealmEx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +426,7 @@
 		};
 		C27ED323219AA5F000158B74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFAC0C26E686B1014BA74C7B /* Pods-RealmEx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
